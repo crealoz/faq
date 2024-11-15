@@ -2,9 +2,9 @@
 
 namespace Crealoz\Faq\Model\ResourceModel\Faq;
 
-use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 use Crealoz\Faq\Model\Faq;
 use Crealoz\Faq\Model\ResourceModel\Faq as FaqResource;
+use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 class Collection extends AbstractCollection
 {

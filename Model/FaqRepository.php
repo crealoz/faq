@@ -2,13 +2,13 @@
 
 namespace Crealoz\Faq\Model;
 
-use Crealoz\Faq\Api\FaqRepositoryInterface;
 use Crealoz\Faq\Api\Data\FaqInterface;
+use Crealoz\Faq\Api\FaqRepositoryInterface;
 use Crealoz\Faq\Api\Data\FaqSearchResultsInterfaceFactory;
 use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;
-use Magento\Framework\Exception\NoSuchEntityException;
-use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\CouldNotDeleteException;
+use Magento\Framework\Exception\CouldNotSaveException;
+use Magento\Framework\Exception\NoSuchEntityException;
 
 class FaqRepository implements FaqRepositoryInterface
 {
@@ -19,11 +19,11 @@ class FaqRepository implements FaqRepositoryInterface
     protected $collectionProcessor;
 
     public function __construct(
-        \Crealoz\Faq\Model\ResourceModel\Faq $resource,
-        \Crealoz\Faq\Model\FaqFactory $faqFactory,
+        \Crealoz\Faq\Model\ResourceModel\Faq              $resource,
+        \Crealoz\Faq\Model\FaqFactory                          $faqFactory,
         \Crealoz\Faq\Model\ResourceModel\Faq\CollectionFactory $faqCollectionFactory,
-        FaqSearchResultsInterfaceFactory $searchResultsFactory,
-        CollectionProcessorInterface $collectionProcessor
+        FaqSearchResultsInterfaceFactory                       $searchResultsFactory,
+        CollectionProcessorInterface                           $collectionProcessor
     ) {
         $this->resource = $resource;
         $this->faqFactory = $faqFactory;

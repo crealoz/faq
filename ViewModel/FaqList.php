@@ -2,8 +2,8 @@
 
 namespace Crealoz\Faq\ViewModel;
 
-use Magento\Framework\View\Element\Block\ArgumentInterface;
 use Crealoz\Faq\Model\ResourceModel\Faq\CollectionFactory;
+use Magento\Framework\View\Element\Block\ArgumentInterface;
 
 class FaqList implements ArgumentInterface
 {

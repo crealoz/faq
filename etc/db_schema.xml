@@ -8,7 +8,7 @@
         <column name="answer" xsi:type="text" nullable="false" comment="Answer"/>
         <column name="is_active" xsi:type="smallint" nullable="false" default="1" comment="Is Active"/>
         <column name="created_at" xsi:type="timestamp" nullable="false" default="CURRENT_TIMESTAMP" comment="Creation Time"/>
-        <column name="updated_at" xsi:type="timestamp" nullable="true" on_update="CURRENT_TIMESTAMP" comment="Update Time"/>
+        <column name="updated_at" xsi:type="timestamp" nullable="true" default="CURRENT_TIMESTAMP" on_update="true" comment="Update Time"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="faq_id"/>
         </constraint>
